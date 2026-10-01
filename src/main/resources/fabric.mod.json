@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "anubis-addon-template",
+  "version": "${version}",
+  "name": "Anubis Addon Template",
+  "description": "Empty addon template for Anubis, build yours on top of it",
+  "authors": [
+    "Your name"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "anubis": [
+      "com.example.addon.ExampleAddon"
+    ]
+  },
+  "mixins": [
+    "anubis-addon-template.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "anubisplus": "*"
+  }
+}
